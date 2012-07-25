@@ -1,0 +1,99 @@
+.littleGallery {
+    position: fixed;
+    background: #2e2e2e;
+    min-width: 900px;
+    min-height: 700px;
+    box-shadow: 0 0 9px 3px #666;
+    border-radius: 3px;
+    z-index: 5;
+    display: none;
+}
+
+.littleGallery .littleGallery-head {
+    text-align: center;
+    padding: 15px;
+    border-bottom: solid 2px #666;
+}
+
+.littleGallery .littleGallery-head .littleGallery-img {
+    margin: 0 10px;
+    padding: 7px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.littleGallery .littleGallery-head .littleGallery-img:hover {
+    background: #444;
+}
+
+.littleGallery .littleGallery-head .littleGallery-img-activ {
+    background: #444;
+}
+
+.littleGallery .littleGallery-body {
+    display: table;
+    width: 100%;
+}
+
+.littleGallery .littleGallery-body .littleGallery-container {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.littleGallery .littleGallery-body .loading {
+    
+}
+
+.littleGallery .littleGallery-body .littleGallery-img {
+    vertical-align: middle;
+}
+
+.littleGallery .littleGallery-footer {
+    padding: 15px;
+    text-align: right;
+    background: #fff;
+}
+
+.littleGallery .littleGallery-footer .littleGallery-button {
+    font-style: normal;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 18px;
+    border-radius: 3px;
+    color: #fff;
+    min-width: 80px;
+    box-shadow: 0 0 1px 1px #ccc;
+    background: -moz-linear-gradient(top,  rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(164,179,87,1) 0%,rgba(117,137,12,1) 100%);
+    background: linear-gradient(to bottom,  rgba(164,179,87,1) 0%,rgba(117,137,12,1) 100%);
+}
+
+.littleGallery .littleGallery-footer .littleGallery-button:hover {
+    opacity: 0.8
+}
+
+.littleGallery .littleGallery-footer .littleGallery-button-close {
+    color: #fff;
+    background: rgb(169,3,41);
+    background: -moz-linear-gradient(top,  rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+    background: linear-gradient(to bottom,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+}
+
+.littleGallery-blind {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    background: #000;
+    display: none;
+}
