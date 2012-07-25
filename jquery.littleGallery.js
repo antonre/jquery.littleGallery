@@ -16,6 +16,7 @@
     
     options = $.extend({
       data: {},
+      buttons: ['cancel','preview', 'next'],
       marginWindow: 50,
       loadingImagesSrc: 'loading.gif'
     }, options);
@@ -71,9 +72,9 @@
         + '    <div class="littleGallery-container"></div>'
         + '</div>'
         + '<div class="littleGallery-footer"> '  
-        + '    <i class="littleGallery-button littleGallery-button-close">Close</i>'            
-        + '    <i class="littleGallery-button littleGallery-button-prev"> << Previous</i>'           
-        + '    <i class="littleGallery-button littleGallery-button-next">Next >></i>'
+        + '    <i class="littleGallery-button littleGallery-button-close">'+options.buttons[0]+'</i>'            
+        + '    <i class="littleGallery-button littleGallery-button-prev">'+options.buttons[1]+'</i>'           
+        + '    <i class="littleGallery-button littleGallery-button-next">'+options.buttons[2]+'</i>'
         + '</div>   '     
         +'</div> <div class="littleGallery-blind></div>' );
  
