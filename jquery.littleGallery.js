@@ -57,7 +57,6 @@
         setTimeout(function () {
            if (flagResize) {
                resize();
-               console.log('rez');
                flagResize = false;
            }
         },50);
@@ -169,7 +168,7 @@
               
               $(tmp).on('load', function () {
                   arrayImages[urlImg] = true;
-                  
+
                   if (lastImageLoading == urlImg) {
                       _this.find('.littleGallery-body .littleGallery-container').html('<img class="littleGallery-img" src="'+urlImg+'">').hide().fadeIn(); ;
                       flagResize = true;
