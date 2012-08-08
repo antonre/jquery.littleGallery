@@ -49,9 +49,19 @@
     vertical-align: middle;
 }
 
+.littleGallery .littleGallery-body .littleGallery-notFound {
+    font-size: 22px;
+    color: #999;
+    font-style: normal;
+    display: inline-block;
+    padding: 5px 10px;
+    border: solid 1px #666;
+    border-radius: 6px;
+}
+
 .littleGallery .littleGallery-body .littleGallery-imgloading {
     display: inline-block;
-    width: 70px; 
+    width: 70px;
     height: 70px;
     background-repeat: no-repeat;
     background-position: center center;
