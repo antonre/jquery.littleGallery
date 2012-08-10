@@ -22,9 +22,7 @@
       data: {},
       marginWindow: {top: 50, left: 50},
       paddingImage: {top: 0, left: 0},
-      circularShift: true,
-      loadingImageSrc: 'loading.gif',
-      closeImageSrc: 'x.png'
+      circularShift: true
     }, options);
 
     var arrayImages = [];
@@ -37,9 +35,8 @@
         var img = _this.find('.littleGallery-body .littleGallery-container .littleGallery-img');
         var heightElements = _this.find('.littleGallery-head').innerHeight();
 
-        if (_this.innerHeight() > wH - options.marginWindow.top) {
-            _this.css('max-height', wH - options.marginWindow.top);
-        }
+        _this.css('height', wH - options.marginWindow.top);
+        _this.css('max-height', wH - options.marginWindow.top);
 
         if (_this.innerWidth() > wW - options.marginWindow.left) {
             _this.css('max-width', wW - options.marginWindow.left);
@@ -168,7 +165,7 @@
           $(this).addClass('littleGallery-img-activ');
 
           if (arrayImages[urlImg] && _this.find('.littleGallery-head .littleGallery-img').length != 1) {
-              _this.find('.littleGallery-body .littleGallery-container').html('');
+              _this.find('.littleGallery-body .littleGallery-container').empty();
           } else if (arrayImages[urlImg]){
               return;
           }
@@ -178,7 +175,7 @@
               flagResize = true;
               resize();
           } else {
-              _this.find('.littleGallery-body .littleGallery-container').show().html('<i class="littleGallery-imgloading"></i>');
+              _this.find('.littleGallery-body .littleGallery-container').html('<i class="littleGallery-imgloading"></i>').show();
               flagResize = true;
               resize();
 
